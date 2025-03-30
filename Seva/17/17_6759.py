@@ -1,25 +1,27 @@
+# 1. Открыть файл, записать все его данные в массив
+# 2. Определение числа, которое нужно по условию (может и не быть)
+# 3. Основная проверка
+
 file = open("17-381.txt")
 m = []
-
-max_39 = -10000000
 for line in file:
-    ch = int(line)
-    m.append(ch)
-    if 999 < abs(ch) < 10000 and str(ch)[-2:] == "39" and ch > max_39:
-        max_39 = ch
+    m.append(int(line))
+
+max_39_4 = -1000000000
+for ch in m:
+    if 999 < abs(ch) < 10000 and (abs(ch) % 100 == 39 or str(ch)[-2:] == '39'):
+        max_39_4 = max( max_39_4, ch )
 
 c = 0
-max_sum = -1000000
-for i in range(len(m) - 1):
-    p = 0
+max_sum = -100000000
+for i in range(len(m)-1):
+    a = 0 # Сколько четырехзначных в нашей паре
     if 999 < abs(m[i]) < 10000:
-        p += 1
+        a += 1
     if 999 < abs(m[i+1]) < 10000:
-        p += 1
+        a += 1
     summa = m[i] + m[i+1]
-    if p == 1 and summa ** 2 <= max_39 ** 2:
+    if a == 1 and summa ** 2 <= max_39_4 ** 2:
         c += 1
-        if summa > max_sum:
-            max_sum = summa
-    print(f"m[i] = {m[i]}, m[i+1] = {m[i+1]}, p={p}, \nsumma={summa}, max_39={max_39}\n")
-print(c, max_sum, max_39)
+        max_sum = max(max_sum, summa)
+print(c, max_sum)
