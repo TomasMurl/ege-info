@@ -1,7 +1,6 @@
-a = [14, 42, 231, 43, 21]
+a = set()
 
-# for i in a:
-#     print(i)
-
-for i in range(len(a)): # range(5) = [0, 1, 2, 3, 4]
-    print(a[i], a[i+1])
+a.add(2)
+a.add(3)
+a.add(3)
+print(a)
