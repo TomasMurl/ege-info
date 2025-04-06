@@ -1,4 +1,9 @@
-a = [321,12,13,12312,312,312,31]
+print("ajkdhkawdhkakdakd", "awdawdadawdwa")
+a = 10
+print(f"Some text {a} awdawa ") 
 
-for i in range(len(a)-1):
-    print(a[i], a[i+1])
+a = 2
+b = 5
+a += 1 # a = a + 1
+a -= 1 # a = a - 1
+a //= 4 # a = a // 4

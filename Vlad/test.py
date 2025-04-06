@@ -1,4 +1,6 @@
-a = [10, 20, 30, 40, 50]
+a = set()
 
-for i in range(len(a) - 2): # [0 .. 4]
-    print(a[i], a[i+1], a[i+2])
+a.add(2)
+a.add(3)
+a.add(2)
+print(a)
