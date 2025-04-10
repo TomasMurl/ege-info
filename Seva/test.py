@@ -1,4 +1,6 @@
-import os
+a = set()
 
-files = os.listdir(".")  # Текущая директория
-print(files)
+a.add(2)
+a.add(3)
+a.add(2)
+print(a)

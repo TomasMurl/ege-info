@@ -1,4 +1,6 @@
-for i in range(10000):
-   if 2 ** i > 1000000:
-      print(i)
-      break
+def kv(n):
+   return n**2
+
+a = [2, 4, 8]
+b = list(map(kv,a))
+print(b)
