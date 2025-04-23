@@ -1,9 +1,10 @@
-print("ajkdhkawdhkakdakd", "awdawdadawdwa")
-a = 10
-print(f"Some text {a} awdawa ") 
+def awdawd(*args, **kwargs):
+    for i in args:
+        print(i)
+    for i in kwargs.values():
+        print(f"kwargs - {i}")
 
-a = 2
-b = 5
-a += 1 # a = a + 1
-a -= 1 # a = a - 1
-a //= 4 # a = a // 4
+
+u = [int(x) for x in range(1,4)]
+awdawd(u,2,3,test = "awdaw",test1 = "awdadadwa")
+

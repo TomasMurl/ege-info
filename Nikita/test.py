@@ -1,10 +1,3 @@
-a = 16
-dels = {1, a}
+a = [1,2,3,4]
 
-for i in range(2, int(a ** 0.5) + 1):
-    if a % i == 0:
-        dels.add(i)
-        dels.add(a // i)
-dels = sorted(dels)
-
-print(dels)
+print(a[0:2], a[1:4], a[::-1])
