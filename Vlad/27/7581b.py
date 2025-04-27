@@ -38,17 +38,7 @@ for cluster in clusters:
     centers.append(center)
 print(f"Центры кластеров - {centers}")
 
-avg_x = 0
-avg_y = 0
-
-for center in centers:
-    avg_x += center[0]
-    avg_y += center[1]
-
-avg_x = avg_x / len(centers)
-avg_y = avg_y / len(centers)
-
-Px = int(avg_x * 10000)
-Py = int(avg_y * 10000)
+Px = int(sum([center[0] for center in centers])/len(centers)*10000)
+Py = int(sum([center[1] for center in centers])/len(centers)*10000)
 
 print(Px, Py)
