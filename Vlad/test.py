@@ -1,6 +1,3 @@
-a = set()
-
-a.add(2)
-a.add(3)
-a.add(2)
-print(a)
+a = 10
+print("print - {a}")
+print(f"print - {a}")
