@@ -1,3 +1,6 @@
-a = [1,2,3,4]
+a = set()
 
-print(a[0:2], a[1:4], a[::-1])
+a.add(2)
+a.add(3)
+a.add(2)
+print(a)

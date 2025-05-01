@@ -1,6 +1,1 @@
-a = set()
-
-a.add(2)
-a.add(3)
-a.add(2)
-print(a)
+print(bin(148)[2:])
