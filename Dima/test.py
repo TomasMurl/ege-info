@@ -1,6 +1,3 @@
-def kv(n):
-   return n**2
-
-a = [2, 4, 8]
-b = list(map(kv,a))
+a = ["12", "2", "a", "wa"]
+b = "".join(a)
 print(b)

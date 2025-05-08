@@ -7,4 +7,4 @@ def F(n):
         return n * F(n - 1)
 
 setrecursionlimit(1000000)
-print(int(F(2023) / F(2020)))
+print(F(2023) // F(2020))
