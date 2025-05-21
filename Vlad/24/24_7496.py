@@ -4,6 +4,8 @@ line = file.readline()
 # ....[AF....AF.....AF]...... - minimum
 # ....A.....A[.....A....A.....]A..... - maximum  
 # .... D.... .... ....C .....
+
+# .....CD.......CD......CD.......
 sublines = line.split("AF")
 minlen = 100000000000
 for i in range(len(sublines)):
