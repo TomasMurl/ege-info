@@ -1,5 +1,5 @@
 a = ('1', '2', '3')
 b = "".join(a)
-
+print(a, b)
 print('12' in a)
 print('12' in b)
