@@ -124,10 +124,6 @@ words = product('ABCDE', repeat=3)
 ### Комбинации с учетом порядка
 
 ```python
-from itertools import combinations
-`````
-
-```python
 words = combinations(range(10), 2)
 ````
 
