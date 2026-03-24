@@ -1,22 +1,31 @@
-# 1.1
+# # 2
+# while True:
+#     s = input()
+#     if s == '0':
+#         break
+#     print(len(s))
+
+# # 4
+# n = int(input())
+# h = 12
+# for i in range(h, n + h):
+#     print(str(i % 24) + ':00')
+
+# # 5
+# r = ''
+# while True:
+#     s = input()
+#     if s == '0':
+#         break
+#     if r == '':
+#         r = s
+#     else:
+#         r = s + ' ' + r
+# print(r)
+
+# 3
 s = 0
-i = 22
-while i < 27:
-    s += i ** 2
-    i += 2
+for i in range(1, 1000001):
+    if i % 5 == 0:
+        s = s + i
 print(s)
-
-# 1.2
-s = 0
-for i in range(22, 27, 2):
-    s += i ** 2
-print(s)
-
-# 2.1
-i = 3
-while i < 21:
-    print(3.14 * i ** 2)
-
-# 2.2
-for i in range(3, 21):
-    print(3.14 * i ** 2)
