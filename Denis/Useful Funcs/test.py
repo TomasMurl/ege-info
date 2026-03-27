@@ -1,2 +1,4 @@
-a = "12345678"
-print(a[-3:])
+a = 'abcde'
+
+for i, j in enumerate(a):
+    print(i, j)
