@@ -2,7 +2,6 @@ with open('17-444.txt') as f:
     m = list(map(int, f))
 
 max_30 = max(x for x in m if str(x)[-2:] == '30')
-print(max_30)
 
 cnt = 0
 max_sum = -300000
