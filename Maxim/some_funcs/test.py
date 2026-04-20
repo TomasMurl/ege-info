@@ -1,2 +1,5 @@
-a = [None] * 10
-a[12] = 5
+a = [True, True, False]
+if all(a):
+    print("Да")
+else:
+    print("Нет")
