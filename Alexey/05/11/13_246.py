@@ -1,7 +1,12 @@
 from ipaddress import ip_address, ip_network
 
-ip = ip_address('124.128.112.142')
-ip_net = ip_address('124.128.64.0')
-print(bin(int(ip))[2:])
-print(bin(int(ip_net))[2:])
-
+# Перебираем все возможные маски
+for m in range(2, 32):
+    # Формируем сети из IP-адреса и маски
+    net = ip_network(f'124.128.112.142/{m}', False)
+    # Проверяем, что адрес сети совпадает с тем, что дан в условии
+    if net.network_address == ip_address('124.128.64.0'):
+        # Формируем адрес маски в двоичном формате
+        mask = '1' * m + '0' * (32 - m)
+        # Выводим на экран 3 байт сразу в 10-ой системе счисления
+        print(int(mask[16:24], 2))
