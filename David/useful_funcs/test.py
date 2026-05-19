@@ -1,16 +1,13 @@
-def convert(n, b):
-    r = ''
-    while n > 0:
-        r = str(n % b) + r
-        n = n // b
-    return r
+from random import randint
 
-def convert2(n, b):
-    r = []
-    while n > 0:
-        r.append(n % b)
-        n = n // b
-    return r[::-1]
+m = []
+for i in range(10):
+    m.append(randint(0, 100))
 
-print(convert(110, 14))
-print(convert2(110, 14))
+print(m)
+
+min_m = 101
+for i in m:
+    if i < min_m:
+        min_m = i
+print(min_m)
