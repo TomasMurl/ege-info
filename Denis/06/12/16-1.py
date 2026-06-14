@@ -1,0 +1,10 @@
+from sys import setrecursionlimit
+setrecursionlimit(10000)
+
+def F(n):
+    if n <= 5:
+        return 1
+    else:
+        return n + F(n-2)
+
+print(F(2126) - F(2122))
