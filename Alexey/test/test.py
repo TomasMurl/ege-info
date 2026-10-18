@@ -1,6 +1,7 @@
-#    01234
-a = "poweroiroekd"
+a = 65
+if a:
+    print('Yes!')
 
-# [start:end:step]
-print(a[2:], a[:3])
-print(a[:-3], a[-2:])
+b = '76858'
+if b.index('6') < b.index('7'):
+    print('Да, 6 и 7 в нужном порядке')
